@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>A simple Three.JS App</title>
+    
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #1a1a1a; /* Tmavé pozadí, na kterém kostka vynikne */
+        font-family: sans-serif;
+        color: white;
+      }
+
+      header {
+        position: absolute; /* Nadpis bude plavat nad 3D scénou */
+        top: 20px;
+        left: 20px;
+        z-index: 10; /* Aby byl nadpis vidět před kostkou */
+        pointer-events: none; /* Aby šlo klikat skrz nadpis na kostku */
+      }
+
+      #container3D {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>A simple three.js app</h1>
+    </header>
+
+    <main>
+      <div id="container3D"></div>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
